@@ -1,0 +1,647 @@
+* body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+}
+html,button,input{
+  font-family: sans-serif; 
+}
+header,nav{
+  display: block; 
+}
+a {
+  background: transparent;
+ }
+a:focus {
+  outline: thin dotted; 
+}
+a:hover, a:active {
+  outline: 0; 
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; 
+}
+h2 {
+  font-size: 1.6em;
+  margin: 0.83em 0; 
+}
+h3 {
+  font-size: 1.25em;
+  margin: 1em 0; 
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; 
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; 
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; 
+}
+img {
+  border: 0; 
+}
+button, input{
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; 
+}
+button,input {
+  line-height: normal;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0 0 20px; 
+}
+ul, ol {
+  margin: 0;
+  padding-left: 0; 
+}
+p {
+  margin-top: 0;
+}
+
+/* Common Style*/
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1; 
+}
+.container:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0; 
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; 
+}
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.3333333333%; 
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%; 
+  }
+}
+
+/* Header Start*/
+header .bottom-header:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0; 
+}
+header .header-sec {
+  padding: 15px 0; 
+}
+header .bottom-header {
+  background-color: #4a4c4e;
+  *zoom: 1;
+  padding: 20px 0; 
+}
+#Indegene {
+  float: left; 
+}
+#Indegene .logo, #Indegene .logo-text {
+  display: inline-block;
+  vertical-align: middle; 
+}
+#Indegene .logo {
+  margin-right: 10px; 
+}
+.header-right{
+  float: right;
+  display: flex;
+}
+.social-icons{
+  background: #c7b198;
+  height: 50px;
+  width: 50px;
+  margin-right: 6px;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 15px;
+  margin-right: 6px;
+}
+.hamburger {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 1270px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: -50px;
+  top:50px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown .hamburger-icon:hover{
+  background-color: transparent;
+}
+.dropdown a:hover {
+  color: #E9A3A6;
+  background-color: #ddd;
+}
+.show {display: block;}
+.middle-pos{
+  position: relative;
+  top:40%;
+  text-align: center;
+  color: #fff;
+ }
+ .middle-pos h1{
+    font-size: 40px;
+ }
+ .middle-pos p{
+  font-size: 16px;
+ }
+ .centered-btns{
+   display: flex;
+   justify-content: center;
+ } 
+ .btn{
+   border: none;
+   padding: 15px 32px;
+   margin-right: 12px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+ .btn img{
+   padding-right: 6px;
+ }
+ .global-btn{
+     background-color: #c7b198;
+     color: #fff;
+ }
+ .download-btn{
+     background-color: #fff;
+     color: #262626;
+ }
+ button.btn.download-btn {
+  padding-right: 63px;
+}
+ .digital-banner{
+   background-image: url(images/digitalBanner.png);
+     width: 100%;
+     height: 630px;
+     background-size: 100% 100%;
+ }
+ .digital-banner .middle-pos{
+   text-align: left;
+   padding: 0 4rem;
+ }
+ .digital-banner .middle-pos h1{
+   font-size: 26px;
+   color: #000000;
+ }
+ .digital-banner .middle-pos p{
+   font-size: 26px;
+ }
+ .company-section{
+     text-align: center;
+     padding: 60px;
+     margin: auto;
+ }
+ .para-pink{
+   color: #E9A3A6;
+ }
+ .pink-font{
+   color: #E9A3A6;
+ }
+ #our-blog {
+   color: #E9A3A6;
+ }
+ .company-section .para-pink{
+   text-align: justify;
+   width: 380px;
+   word-spacing: -1px;
+ }
+ .company-section .inline-block{
+   margin: 12px;
+ }
+ .company-section img{
+     width: 60px;
+     height: 60px;
+     background-color: #E9A3A6;
+     border-radius: 50%;
+     margin: 12px;
+     padding: 8px;
+ }
+ .inline-block{
+   display: inline-block;
+ }
+ .Inspirational-section{
+   background-image: url(./images/bannerImg.png);
+ }
+ .Inspirational{
+  padding: 80px 0px;
+ }
+ .Inspirational-section h1{
+   padding-top: 2rem;
+   color: #fff;
+   text-align: center;
+   padding-bottom: 2rem;
+ }
+ .Inspirational-section p{
+   text-align: center;
+   width: 185px;
+ }
+ .Inspirational-section h4{
+   padding-left: 22px;
+   font-weight: bold;
+ }
+ .event-section{
+  margin: 5rem 5rem 2rem 5rem;   
+  position: relative;
+  left: 4rem;
+ }
+ .event-block{
+   margin-bottom: 2rem;
+ }
+ .event-info{
+   display: inline-block;
+   vertical-align: top;
+   padding-left: 18px;
+ }
+ .event-info h2{
+   font-size: 24px;
+   font-weight: 500;
+ }
+ .event-info .info{
+   display: block;
+   margin-bottom: 12px;
+ }
+ .info img{
+   padding-right: 8px;
+ }
+ .info span{
+   vertical-align: top;
+ }
+ .font-gray{
+   color: #A0A0A0;
+ }
+ .venue{
+   color:#D3C3B4
+ }
+ .blog-section{
+     padding: 20px;
+     margin: auto;
+ }
+ .blog-section h2{
+   text-align: center;
+ }
+ .blog-section h3{
+   text-align: center;
+ }
+ .card {
+   padding: 0;
+   margin-right: 2.5rem;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+ }
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .date-info{
+   position: relative;
+   top: -3px;
+   height: 280px;
+   background-color: #ebe2d9;
+   display: inline-block;
+   width: 25%;
+   vertical-align: top;
+   padding: 3rem 0.3rem;
+ }
+ .date-info h1{
+   color: #B69874;
+   font-size: 48px;
+ }
+ .date-info span{
+   color: #C8B7A5;
+   font-size:18px;
+ }
+ .release-text{
+   display: inline-block;
+   float: right;
+   width: 220px;
+   padding-top: 2rem;
+   padding-right: 58px;
+ }
+ .release-text h3{
+   font-size: 22px;
+   font-weight: 500;
+ }
+ .release-text p{
+   font-size: 14px;
+   color: #999999;
+ }
+ .footer-section h1{
+   color: #fff;
+ }
+ .input-group{
+   position: relative;
+   align-items: stretch;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-box-align: stretch;
+   -ms-flex-align: stretch;
+   align-items: stretch;
+   width: 600px;
+   left: 6rem;
+   margin: auto;
+ }
+ .input-group input{
+   border-radius-top-left: 5px;
+   border: transparent;
+   width: 300px;
+   height: 50px;
+   padding: 20px;
+ }
+ .input-group-text{
+     height: 50px;
+     align-items: center;
+     padding: .7rem .75rem;
+     margin-bottom: 0;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     color: #fff;
+     text-align: center;
+     white-space: nowrap;
+     background-color: #B59877;
+     border: 1px solid #ced4da;
+     border-radius-top-right:5px;
+     border: transparent;
+ }
+.menu-section{
+  margin-left: 0rem;
+  display: inline-flex;
+  position: relative;
+  top: 15px;
+}
+.menu-section h3{
+  font-family: verdana;
+  font-size: 20px;
+  color: #7f7f7f;
+  margin: -2px 20px;}
+.hamburger-icon{
+  vertical-align: middle;
+  margin: 2px;
+}
+.testimonial {
+  color: white;
+  position: relative;
+  padding-bottom: 50px; 
+}
+.testimonial .slides {
+  list-style: none;
+  *zoom: 1; 
+}
+.testimonial .slides:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0; 
+}
+ .testimonial .flex-control-nav li {
+  display: inline-block;
+  margin: 0 5px; 
+}
+.testimonial .flex-control-nav li a {
+  overflow: hidden;
+  text-indent: -9999px;
+  background: transparent;
+  border:2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+ }
+.testimonial .flex-control-nav li a.flex-active {
+  background-color: #fff; 
+}
+ol.flex-control-nav.flex-control-paging{
+  text-align: center;
+  padding-top: 20px;
+}
+.social-icons img.icon.facebook {
+  margin: 0px auto;
+}
+.social-icons img.icon.linkedin {
+  margin: 1px 2px;
+}
+.full-width {
+  style: 100%;
+}
+.bold-text {
+  font-weight: 600;
+}
+
+/* Footer Start */
+
+.footer-section .footer-middle {
+  background-color: #000000;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  font-size: 0.875em; 
+}
+.footer-section .footer-link {
+  margin: 30px; 
+}
+.footer-section .footer-link a {
+  color: #faf4f4;
+  padding: 0 20px;
+  border-right: 1px solid white;
+  line-height: 20px;
+  font-family: sans-serif; 
+}
+.footer-section .footer-link a:last-child {
+    border-right: none; 
+}
+.footer-section .colophon {
+  color: #898b8d; 
+}
+.Marketing-banner{
+  background-color: #ccc;
+  height: 650px;
+}
+.blog-section-bg {
+  background-color: #F8F9FB;
+  height: 700px;
+}
+
+
+/* Responsive CSS */
+@media only screen and (min-width: 992px) {
+  .company-section .inline-block{
+    margin: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1270px; 
+  } 
+}
+
+@media only screen and (max-width: 768px){
+   html,body{
+     overflow-x: hidden;
+   }
+  .social-icons img.icon.facebook {
+    margin: -1px 3px;
+  }
+  .social-icons img.icon.linkedin {
+    margin: -3px 2px;
+  }
+  .social-icons img.icon.twitter {
+    margin: -1px 1px;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    min-width: 394px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: -50px;
+    top: 38px;
+  }
+  .middle-pos{
+    top: 25% !important;
+  }
+  #Indegene .logo{
+    width: 112px;
+    height: auto;
+  }
+  .social-icons{
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .social-icons .icon{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 8px;
+    bottom: 6px;
+  }
+  .menu-section{
+    top:6px;
+    margin-left: -0.8rem;
+  }
+  .menu-section h3{
+    font-size: 14px;
+  }
+  .hamburger-icon{
+    margin: 0;
+  }
+  .company-section .para-pink{
+    width: 275px;
+  }
+  .event-section{
+    left: 0;
+  }
+  .card{
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  .input-group{
+    left: 0.7rem;
+  }
+  .input-group input{
+    width: auto;
+  }
+  .btn{
+    padding: 15px;
+  }
+  .Inspirational-section .col-md-3{
+    margin-left: 4rem;
+  }
+  .company-section {
+  text-align: center;
+  padding: 48px 0px;
+  margin: auto;
+  }
+  .blog-section-bg {
+  background-color: #F8F9FB;
+  height: 100%;
+  }
+  .footer-section .footer-link a {
+    color: #faf4f4;
+    padding: 0 10px;
+    border-right: 1px solid white;
+    line-height: 20px; 
+  }
+  .event-section {
+    margin: 2rem 0rem 0rem 0rem;
+    position: relative;
+  }
+  button.btn.download-btn {
+    padding: 18px 19px;
+  }
+  .event-info {
+  display: block;
+  vertical-align: top;
+  padding-left: 18px;
+  }
+}
+
